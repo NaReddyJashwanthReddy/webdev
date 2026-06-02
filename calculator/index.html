@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <form>
+                <input id="num1" type="number" placeholder="First number">
+                <input id="num2" type="number" placeholder="Second number">
+            </form>
+        </div>
+        <div class="options">
+            <button type="button" class="action-button" onclick="add()">Add</button>
+            <button type="button" class="action-button" onclick="subtract()">Subtract</button>
+            <button type="button" class="action-button" onclick="multiply()">Multiply</button>
+        </div>
+        <div class="result">
+            <p>Result: <span id="result">0</span></p>
+        </div>
+    </div>
+</body>
+</html>
