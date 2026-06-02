@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="score_section">
+            <div class="home_team">
+                <div class="heading">
+                    <h1>HOME</h1>
+                </div>
+                <div class="score_value">
+                    <h1 id="home_score">0</h1>
+                </div>
+                <div class="scoring">
+                    <div class="add1button">
+                        <button class="button1" onclick="add1point('home')">+1</button>
+                    </div>
+                    <div class="add2button">
+                        <button class="button2" onclick="add2point('home')">+2</button>
+                    </div>
+                    <div class="add3button">
+                        <button class="button3" onclick="add3point('home')">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="guest_team">
+                <div class="heading">
+                    <h1>GUEST</h1>
+                </div>
+                <div class="score_value">
+                    <h1 id="guest_score">0</h1>
+                </div>
+                <div class="scoring">
+                    <div class="add1button">
+                        <button class="button1" onclick="add1point('guest')">+1</button>
+                    </div>
+                    <div class="add2button">
+                        <button class="button2" onclick="add2point('guest')">+2</button>
+                    </div>
+                    <div class="add3button">
+                        <button class="button3" onclick="add3point('guest')">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="resetScores()">Reset Scores</button>
+        </div>
+    </div>
+</body>
+</html>
