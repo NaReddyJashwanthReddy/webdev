@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    background: #080808;
+    color: #f8fafc;
+}
+
+.container {
+    width: min(100%, 720px);
+    background: #0d0d0d;
+    border-radius: 28px;
+    padding: 32px 32px 24px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65);
+}
+
+.container::before {
+    content: "Calculator";
+    display: block;
+    margin-bottom: 22px;
+    font-size: 1.3rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.84;
+}
+
+.inputs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.inputs input {
+    flex: 1;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+    background: transparent;
+    color: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.22s ease;
+}
+
+.inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.inputs input:focus {
+    border-color: #ffffff;
+    background: transparent;
+}
+
+.options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.action-button {
+    flex: 1;
+    min-width: 100px;
+    padding: 16px 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.action-button:hover,
+.action-button:focus-visible {
+    transform: translateY(-1px);
+    filter: brightness(0.96);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+}
+
+.result {
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.result p {
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+.result span {
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+@media (max-width: 740px) {
+    .container {
+        padding: 26px 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        border-radius: 24px;
+    }
+
+    .action-button {
+        padding: 14px 18px;
+    }
+}
