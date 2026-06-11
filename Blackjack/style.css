@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Inter, system-ui, sans-serif;
+    background: radial-gradient(circle at top left, #0b3b12 0%, #0d571a 30%, #104f1a 100%);
+    color: #ecf9ee;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.container {
+    width: min(420px, 100%);
+    background: rgba(14, 44, 18, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 28px 24px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 20px 50px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.main_heading h1 {
+    font-size: clamp(2rem, 2.4vw, 2.6rem);
+    letter-spacing: -0.04em;
+    margin-bottom: 14px;
+}
+
+.info {
+    background: #effaf0;
+    border: 1px solid #bde9bf;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #194c2a;
+    line-height: 1.6;
+}
+
+.cards,
+.sum,
+.message {
+    background: #ffffff;
+    border: 1px solid rgba(15, 47, 16, 0.08);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    color: #194c2a;
+}
+
+.cards p,
+.sum p {
+    font-size: 1rem;
+    color: #194c2a;
+}
+
+.cards span,
+.sum span {
+    font-weight: 700;
+}
+
+.message {
+    background: #e3f2fd;
+    border-color: #90caf9;
+    color: #0d47a1;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover:not(:disabled) {
+    background: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:disabled {
+    background: #a5a5a5;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.reset-button {
+    background: #d32f2f;
+}
+
+.reset-button:hover {
+    background: #b71c1c;
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 20px;
+    }
+
+    .main_heading h1 {
+        font-size: 2rem;
+    }
+}
