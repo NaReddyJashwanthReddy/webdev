@@ -7,3 +7,9 @@ function add3points(points){
 function dec1point(points){
     return points -= 1;
 }
+
+let funcion = [
+    "first skill",
+    "second skill",
+    "third skill"
+]

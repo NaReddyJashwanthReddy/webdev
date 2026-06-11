@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_heading">
+            <h1>Blackjack Game</h1>
+        </div>
+        <div class="info">
+            <p>Welcome to the Blackjack Game!<br>Want to play a game?</p>
+        </div>
+        <div class="cards">
+            <p>Cards: <span id="cards"></span></p>
+        </div>
+        <div class="sum">
+            <p>Sum: <span id="sum"></span></p>
+        </div>
+        <div class="message">
+            <p id="message"></p>
+        </div>
+        <div class="button-group">
+            <button type="button" class="action-button" onclick="startGame()">Start Game</button>
+            <button type="button" class="action-button" id="hitBtn" onclick="newCard()" disabled>Hit</button>
+            <button type="button" class="action-button" id="standBtn" onclick="stand()" disabled>Stand</button>
+            <button type="button" class="action-button reset-button" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
