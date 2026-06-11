@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Lucida Console', monospace;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.heading {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+
+.sub {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.sub p {
+    color: #90EE90;
+    font-size: 1rem;
+}
+
+.length-of-password {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.length-of-password label {
+    color: #90EE90;
+    font-weight: bold;
+}
+
+.length-of-password input {
+    background-color: #222222;
+    color: #90EE90;
+    border: 1px solid #555555;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.include-char {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.include-char label {
+    color: #90EE90;
+    font-weight: bold;
+}
+
+.include-char select {
+    background-color: #222222;
+    color: #90EE90;
+    border: 1px solid #555555;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.include-char select:focus {
+    outline: none;
+    border-color: #00CC00;
+}
+
+.include-char select option {
+    background-color: #222222;
+    color: #90EE90;
+}
+
+.button-generate {
+    margin-bottom: 40px;
+}
+
+.generate-btn {
+    background-color: #00CC00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+    background-color: #00AA00;
+}
+
+.generated {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.generated p {
+    background-color: #333333;
+    color: #90EE90;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #555555;
+    display: none;
+    border-radius: 10px;
+}
+
+.generated p:hover {
+    background-color: #3a3a3a;
+    border-color: #777777;
+    color: #00CC00;
+}
+
+.generated p:not(:empty) {
+    display: block;
+}

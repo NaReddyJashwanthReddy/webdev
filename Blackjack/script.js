@@ -5,8 +5,10 @@ let gameOver = false;
 let cardsEl = document.getElementById("cards");
 let sumEl = document.getElementById("sum");
 let messageEl = document.getElementById("message");
+let startBtn = document.getElementById("startBtn");
 let hitBtn = document.getElementById("hitBtn");
 let standBtn = document.getElementById("standBtn");
+let resetBtn = document.getElementById("resetBtn");
 
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -154,3 +156,9 @@ function resetGame() {
     hitBtn.disabled = true;
     standBtn.disabled = true;
 }
+
+// Event Listeners
+startBtn.addEventListener("click", startGame);
+hitBtn.addEventListener("click", newCard);
+standBtn.addEventListener("click", stand);
+resetBtn.addEventListener("click", resetGame);
