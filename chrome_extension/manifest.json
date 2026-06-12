@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "My Lead Tracker Chrome Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension on Leads Tracking.",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    }
+}
