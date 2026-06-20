@@ -32,8 +32,6 @@ counter/
 	└── images (1).jpg
 ```
 
-### Screenshot
-
 
 ---
 More projects will be added here as I continue learning and building!
