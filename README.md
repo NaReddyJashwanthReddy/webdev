@@ -35,4 +35,4 @@ counter/
 
 ---
 More projects will be added here as I continue learning and building!
-The future is bright @copyright/2026
+@copyright/2026
